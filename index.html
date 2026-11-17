@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trendy Boutique - Online Shopping</title>
+
+    <!-- CSS CONNECTION -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            Trendy <span>Boutique</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-icons">
+
+            <div id="cart-icon" class="cart-icon">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p>WELCOME TO TRENDY BOUTIQUE</p>
+
+            <h1>
+                Discover Your
+                <span>Unique Style</span>
+            </h1>
+
+            <p>
+                Explore the latest fashion trends,
+                elegant outfits and beautiful accessories.
+            </p>
+
+            <button type="button" id="shop-now" class="shop-now-btn">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROMOTION SECTION -->
+
+    <section class="promo-section">
+
+        <div class="promo-box">
+            <h3>Free Shipping</h3>
+            <p>On selected orders</p>
+        </div>
+
+        <div class="promo-box">
+            <h3>Latest Trends</h3>
+            <p>Discover new collections</p>
+        </div>
+
+        <div class="promo-box">
+            <h3>Premium Quality</h3>
+            <p>Fashion made for you</p>
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH SECTION -->
+
+    <section class="search-section">
+
+        <h2>Find Your Favourite Style</h2>
+
+        <p>Search your favourite fashion products.</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search dresses, tops, bags..."
+                aria-label="Search products"
+            >
+
+            <button type="button" id="search-button">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS SECTION -->
+
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>Explore Our Products</h2>
+
+            <span>Find your favourite styles.</span>
+
+        </div>
+
+
+        <div class="product-container">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card"
+                 data-id="1"
+                 data-category="dresses"
+                 data-description="elegant floral summer dress">
+
+                <img
+                    src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=600"
+                    alt="Floral Dress"
+                >
+
+                <h3 class="product-name">Floral Dress</h3>
+
+                <p class="product-price">₹1,499</p>
+
+                <button type="button" class="add-to-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card"
+                 data-id="2"
+                 data-category="tops"
+                 data-description="stylish casual womens top">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=600"
+                    alt="Stylish Top"
+                >
+
+                <h3 class="product-name">Stylish Top</h3>
+
+                <p class="product-price">₹899</p>
+
+                <button type="button" class="add-to-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card"
+                 data-id="3"
+                 data-category="bags"
+                 data-description="elegant fashion handbag">
+
+                <img
+                    src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600"
+                    alt="Fashion Handbag"
+                >
+
+                <h3 class="product-name">Fashion Handbag</h3>
+
+                <p class="product-price">₹1,999</p>
+
+                <button type="button" class="add-to-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card"
+                 data-id="4"
+                 data-category="shoes"
+                 data-description="trendy womens fashion shoes">
+
+                <img
+                    src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600"
+                    alt="Fashion Shoes"
+                >
+
+                <h3 class="product-name">Fashion Shoes</h3>
+
+                <p class="product-price">₹2,499</p>
+
+                <button type="button" class="add-to-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card"
+                 data-id="5"
+                 data-category="accessories"
+                 data-description="stylish sunglasses">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600"
+                    alt="Sunglasses"
+                >
+
+                <h3 class="product-name">Stylish Sunglasses</h3>
+
+                <p class="product-price">₹699</p>
+
+                <button type="button" class="add-to-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div class="product-card"
+                 data-id="6"
+                 data-category="watches"
+                 data-description="luxury womens wrist watch">
+
+                <img
+                    src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600"
+                    alt="Luxury Watch"
+                >
+
+                <h3 class="product-name">Luxury Watch</h3>
+
+                <p class="product-price">₹1,799</p>
+
+                <button type="button" class="add-to-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+
+            <h2>About Trendy Boutique</h2>
+
+            <p>
+                Welcome to Trendy Boutique!
+
+                Discover beautiful fashion collections,
+                elegant outfits and stylish accessories.
+
+                Our mission is to make every customer
+                feel confident, beautiful and fashionable.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHOPPING CART SECTION -->
+
+    <section class="cart-section" id="cart-section">
+
+        <div class="section-heading">
+
+            <h2>My Shopping Cart</h2>
+
+            <p>Your selected products</p>
+
+        </div>
+
+        <div id="cart-items">
+
+            <p class="empty-cart">
+                Your shopping cart is empty!
+                Start shopping today.
+            </p>
+
+        </div>
+
+        <div class="cart-summary">
+
+            <h3>
+                Total Amount:
+                <span id="cart-total">₹0.00</span>
+            </h3>
+
+            <button type="button" class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER SECTION -->
+
+    <section class="newsletter-section">
+
+        <h2>Join Our Fashion Community</h2>
+
+        <p>Get updates about new collections and offers.</p>
+
+        <form id="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>Trendy Boutique</h2>
+
+                <p>
+                    Your destination for trendy fashion
+                    and timeless elegance.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#about">About</a>
+                <a href="#cart-section">My Cart</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: support@trendyboutique.com</p>
+
+                <p>Phone: +91 98765 43210</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Trendy Boutique.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT CONNECTION -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
